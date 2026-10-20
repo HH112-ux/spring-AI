@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: quick-start
+  ai:
+    deepseek:
+      api-key: ${AI_DEEPSEEK_API_KEY}
+      base-url: 'https://api.deepseek.com'
+    dashscope:
+      api-key: 'sk-6827957d081543139ec71d9a45e56216'
+      base-url: 'https://dashscope.aliyuncs.com/api/v1'
+    ollama:
+      model: 'qwen3.5:0.8b'
+      base-url: 'http://localhost:11434'
+server:
+  port: 8080
