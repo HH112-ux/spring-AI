@@ -17,6 +17,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>quick-start</module>
+        <module>chat-client</module>
     </modules>
     <properties>
         <java.version>17</java.version>
