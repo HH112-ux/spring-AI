@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: chat-advisor
+  ai:
+    dashscope:
+      api-key: 'sk-6827957d081543139ec71d9a45e56216'
+server:
+  port: 8075
