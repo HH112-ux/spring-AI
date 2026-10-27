@@ -19,6 +19,7 @@
         <module>quick-start</module>
         <module>chat-client</module>
         <module>chat-advisor</module>
+        <module>chat-memory</module>
     </modules>
     <properties>
         <java.version>17</java.version>

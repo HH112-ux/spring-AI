@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: chat-memory
+  ai:
+    dashscope:
+      api-key: ${AI_DASHSCOPE_API_KEY}
+    chat:
+      memory:
+        repository:
+          jdbc:
+            schema: 'classpath:/sql/schema-mysql.sql'
+            initialize-schema: always
+    memory:
+      redis:
+        host: ${REDIS_HOST:127.0.0.1}
+        port: ${REDIS_PORT:6379}
+        username:
+        password:
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: ${MYSQL_DB_USER}
+    password: ${MYSQL_DB_PASSWORD}
+    url: ${MYSQL_DB_URL}
+server:
+  port: 8082
