@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: chat-rag
+  ai:
+    dashscope:
+      api-key: ${AI_DASHSCOPE_API_KEY}
+    vectorstore:
+      elasticsearch:
+        initialize-schema: true
+        index-name: custom-index
+        dimensions: 1024
+        similarity: cosine
+  elasticsearch:
+    uris: ${ES_URL:http://localhost:9200}
+    username: ${ES_USER:elastic}
+    password: ${ES_PASSWORD:changeme}
+server:
+  port: 8084
